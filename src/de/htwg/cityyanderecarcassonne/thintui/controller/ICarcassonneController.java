@@ -25,15 +25,19 @@ public interface ICarcassonneController {
 
     String getCardPossibilities();
 
-    void placeCard(String selector, String position);
+    void placeCard(String position);
 
     String getMeeplePossibilities();
+
+    void placeMeeple(String position);
 
     ITownsquare getTownsquare();
 
     void finishRound();
 
-    String saveGame();
+    void saveGame();
 
     void loadGame(String id);
+
+    String tui();
 }
